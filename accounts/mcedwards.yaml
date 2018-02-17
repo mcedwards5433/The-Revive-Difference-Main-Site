@@ -1,0 +1,11 @@
+email: m.edwards@upstatephysicians.com
+fullname: 'Morgan Edwards'
+title: Morgan
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$Z2cqeDm2.sJsam1G.pOhY./.Ypx/UC0V7hMVbW4Ww.3ioGXwY0kJ2
