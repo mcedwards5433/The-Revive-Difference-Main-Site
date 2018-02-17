@@ -1,0 +1,19 @@
+<meta charset="utf-8" />
+<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+{% include 'partials/metadata.html.twig' %}
+<link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+<link rel="canonical" href="{{ page.url(true, true) }}" />
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css-compiled/mystyles.css', 103) %}
+    {% do assets.addCss('theme://css/temp.css', 102) %}
+{% endblock stylesheets %}
+{{ assets.css() }}
+
+
+{% block javascripts %}
+    {% do assets.addJS('theme://js/fontawesome-all.min.js', 100) %}
+    {% do assets.addJS('theme://js/slidebars.min.js', 99) %}
+{% endblock %}
+{{ assets.js() }}
+

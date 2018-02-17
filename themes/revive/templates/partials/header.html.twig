@@ -1,0 +1,14 @@
+<header class="hero">
+    <nav>
+        <div class="has-text-centered">
+            <a href="{{ base_url == '' ? '/' : base_url }}"><img src="logo.png" style="margin-top:20px;">
+        </div>
+        <div class="is-hidden-mobile mainNav" style="margin-top:-55px;">
+            {% include 'partials/navigation.html.twig' %}
+        </div>
+        <div class="is-hidden-desktop is-hidden-tablet" style="font-size: 3vw;">
+            {% include 'partials/navigation.html.twig' %}
+        </div>
+</div>
+    </nav>
+</header>
